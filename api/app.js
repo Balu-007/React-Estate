@@ -3,6 +3,7 @@ import postRoute from "./routes/post.route.js";
 import authRoute from "./routes/auth.route.js";
 
 const app = express();
+app.use(express.json());
 app.use("/api/test", (req, res)=> {
     res.send("it works!")
 });
