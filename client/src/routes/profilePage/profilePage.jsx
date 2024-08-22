@@ -21,6 +21,7 @@ function ProfilePage() {
       navigate('/login');
     }
   }
+
   return (
     <div className="profilePage">
       <div className="details">
