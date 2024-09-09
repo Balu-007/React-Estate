@@ -3,8 +3,10 @@ import { Server } from "socket.io";
 const io = new Server({
     cors: {
         // origin: "http://localhost:5173",
-        origin: "https://react-estate-sigma.vercel.app/",
+        origin: "https://react-estate-sigma.vercel.app",
         // origin: "*",
+        credentials:true,            //access-control-allow-credentials:true
+        optionSuccessStatus:200
     },
 });
 
